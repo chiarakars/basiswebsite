@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(212, 220, 224);
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 5cap;
+}
+
+h2 {
+  color: #00294a;
+  font-size: 4cap;
+}
+
+p {
+  /* text-decoration: underline; */
+  color: black;
+}
+
+nav {
+  /* position: fixed; */
+}
+
+ul {
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+  justify-content: space-around;
+}
+
+ul:nth-of-type(1) {
+  background-color: #003865;
+}
+
+ol {
+  color: black;
+  padding: 1em;
+  list-style-type: none;
+  gap: 1em;
+  justify-content: space-around;
+}
+
+li {
+  font-weight: bold;
+}
+
+.logo {
+  margin-top: -2em;
+  margin-bottom: -2em;
+}
+
+.pitcher,
+.beakermug,
+.icecubetray,
+.chaioatmilklatte,
+.matchagreen,
+.xlcoldbrew,
+.coldbrewstarter {
+  justify-content: space-between;
+  background-color: rgb(212, 220, 224);
+  padding: 20px;
+  background: whitesmoke;
+  color: black;
+  border-radius: 30px;
+}
+
+.subscribebutton {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  /* padding: 1px; */
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+button {
+  background-color: rgb(6, 78, 41);
+  color: white;
+  border-radius: 20px;
+}
+
+.addbutton {
+  background-color: rgb(6, 78, 41);
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 1em;
+}
+
+.somethingforeveryone {
+  justify-content: space-between;
+  background-color: rgb(212, 220, 224);
+  padding: 20px;
+  background: whitesmoke;
+  color: black;
+  border-radius: 30px;
+}
+
+.sfe {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.explorethearchieve {
+  background: #003865;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  text-align: left;
+}
+
+p.explorethearchieve {
+  color: white;
+}
+
+.viewmorerecipesbutton {
+  background-color: rgb(255, 255, 255);
+  color: #00294a;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 1em;
+}
+
+.thebuzz {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(212, 220, 224);
+  padding: 20px;
+  background: whitesmoke;
+  color: black;
+  border-radius: 30px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
