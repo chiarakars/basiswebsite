@@ -15,7 +15,6 @@ h2 {
 }
 
 p {
-  /* text-decoration: underline; */
   color: black;
 }
 
@@ -32,7 +31,7 @@ ul {
   justify-content: space-around;
 }
 
-ul:nth-of-type(1) {
+nav ul {
   background-color: #003865;
 }
 
@@ -103,8 +102,10 @@ button {
 .sfe {
   display: flex;
   justify-content: space-between;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  overflow-x: scroll;
+  background-color: transparent;
 }
 
 .explorethearchieve {
