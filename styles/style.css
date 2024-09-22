@@ -12,7 +12,7 @@ h1 {
   margin: -150px 0;
 }
 
-h1 span {
+h1, h2 span {
   display: block;
 }
 
@@ -23,6 +23,12 @@ h2 {
 
 h4 {
   color: #023150;
+}
+
+h5 {
+  font-size: medium;
+  margin-top: -1.5em;
+  font-weight: lighter;
 }
 
 p {
@@ -140,6 +146,11 @@ li {
   font-size: smaller;
 }
 
+.bundles p {
+  margin-top: -0.5em;
+  font-size: smaller;
+}
+
 .pitcher,
 .beakermug,
 .icecubetray,
@@ -149,7 +160,7 @@ li {
 .coldbrewstarter {
   justify-content: space-between;
   background-color: rgb(212, 220, 224);
-  padding: 20px;
+  padding: 15px;
   margin: 5px;
   background: white;
   color: black;
@@ -198,16 +209,47 @@ border-style: none;
   color: #023150;
 }
 
+.bundles p {
+
+}
+
 .explorethearchieve {
-  background: #023150;
+  background: #003865;
   padding: 20px;
   color: rgb(255, 255, 255);
-  border-radius: 30px;
+  border-radius: 40px;
   text-align: left;
 }
 
-p.explorethearchieve {
+.explorethearchieve h2 {
   color: white;
+  text-align: center;
+  font-size: 4.5cap;
+  margin-top: -0.2em;
+  margin-bottom: -0.2em;
+}
+
+.explorethearchieve h3 {
+  font-size: 2.5cap;
+  text-align: center;
+}
+
+.explorethearchieve p {
+  color: white;
+  text-align: center;
+}
+
+.explorethearchieve button {
+  background-color: rgb(255, 255, 255);
+  color: #023150;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 1em;
+  text-align: center;
+}
+
+video {
+  border-radius: 3cap;
 }
 
 .viewmorerecipesbutton {
