@@ -14,13 +14,13 @@ function showNextText() {
   setTimeout(() => {
     texts.forEach(text => text.classList.remove('exit'));
     texts[currentIndex].classList.add('active');
-  }, 1000); // Wacht 0.6 seconden, zodat de huidige tekst de tijd heeft om naar links te schuiven
+  }, 600); // Wacht 0.6 seconden, zodat de huidige tekst de tijd heeft om naar links te schuiven
 }
 
 // Toon de eerste tekst bij het laden van de pagina
 texts[currentIndex].classList.add('active');
 
 // Wissel elke 3 seconden van tekst
-setInterval(showNextText, 3000);
+setInterval(showNextText, 4000);
 
 //met hulp van ChatGPT
