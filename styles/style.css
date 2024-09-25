@@ -1,8 +1,39 @@
+/* Default (light mode) */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #023150;
+  --secondary-color: #e3ecf0;
+}
+
+body:has(input[value="dark"]:checked) {
+  --background-color: #1B1A55;
+  --text-color: #9290C3;
+  --primary-color: #535C91;
+  --secondary-color: #070F2B;
+}
+
+body:has(input[value="summer"]:checked) {
+  --background-color: #fff4ca; /* Light sunny yellow */
+  --text-color: #005f73;       /* Dark teal */
+  --primary-color:#074c0b;    /* Bright orange */
+  --secondary-color: #86cf89;  /* Warm earthy tone */
+}
+
 body {
-  background-color: #e3ecf0;
-  color: black;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   text-align: center;
   font-size: 16px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--background-color);
 }
 
 header {
@@ -10,7 +41,7 @@ header {
 }
 
 h1 {
-  color: white;
+  color: var(--background-color);
   font-size: 4cap;
   font-weight: 1000;
   text-align: center;
@@ -22,12 +53,12 @@ h1, h2 span {
 }
 
 h2 {
-  color: #023150;
+  color: var(--primary-color);
   font-size: 3.5cap;
 }
 
 h4 {
-  color: #023150;
+  color: var(--primary-color);
 }
 
 h5 {
@@ -37,7 +68,7 @@ h5 {
 }
 
 p {
-  color: black;
+  color: var(--text-color);
 }
 
 nav {
@@ -47,7 +78,7 @@ nav {
 }
 
 ul {
-  color: rgb(255, 255, 255);
+  color: var(--secondary-color);
   padding: 1em;
   display: flex;
   list-style-type: none;
@@ -57,12 +88,12 @@ ul {
 }
 
 nav ul {
-  background-color: #003865;
+  background-color: var(--primary-color);
   z-index: 10;
 }
 
 ol {
-  color: black;
+  color: var(--text-color);
   padding: 1em;
   list-style-type: none;
   gap: 1em;
@@ -71,45 +102,6 @@ ol {
 
 li {
   font-weight: bold;
-}
-
-:root {
-  color-scheme: light dark;
-  --bg: light-dark(Pink, #023150); /* Background for the page */
-  --clr: light-dark(#023150, White); /* Text color for the page */
-  --button-bg: light-dark(#023150, White); /* Background color for button */
-  --button-clr: light-dark(White, #023150); /* Text color for button */
-  --text-clr: light-dark(Black, White);
-}
-
-/* Set theme for light mode */
-html:has([value="light"]:checked) {
-  color-scheme: light;
-}
-
-/* Set theme for dark mode */
-html:has([value="dark"]:checked) {
-  color-scheme: dark;
-}
-
-/* Apply background and text colors to the page */
-html {
-  color: var(--clr);
-  background-color: var(--bg);
-}
-
-/* Apply theme-specific button styles */
-button {
-  padding: 1em;
-  margin: 0;
-  border: none;
-  background-color: var(--button-bg);
-  color: var(--button-clr);
-  cursor: pointer;
-}
-
-p {
-  color: var(--text-clr);
 }
 
 .logo {
@@ -122,9 +114,9 @@ p {
   text-align: center;
   margin: -18px 0;
   padding: 3px 0;
-  background-color: white;
+  background-color: var(--secondary-color);
   font-weight: bold;
-  color: black;
+  color: var(--text-color);
   position: relative;
   font-size: smaller;
   z-index: 1;
@@ -133,7 +125,7 @@ p {
 
 .carousel-p {
   position: absolute;
-  background-color: white;
+  background-color: var(--secondary-color);
   width: 100%;
   top: 0;
   left: 100%; /* Start buiten het scherm aan de rechterkant */
@@ -164,15 +156,15 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--secondary-color);
   margin: -10;
   padding: -10;
   margin-top: 1em;
 }
 
 .frontpage button {
-  background-color: white;
-  color: black;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   border: 1px solid black;
   padding: 13px;
   border-radius: 15px;
@@ -186,6 +178,7 @@ p {
   grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
   gap: -5px;
   margin-top: 20px;
+
 }
 
 .bestsellers p {
@@ -206,11 +199,11 @@ p {
 .xlcoldbrew,
 .coldbrewstarter {
   justify-content: space-between;
-  background-color: rgb(212, 220, 224);
+  background-color: var(--background-color);
   padding: 15px;
   margin: 5px;
-  background: white;
-  color: black;
+  background: var(--background-color);
+  color: var(--text-color);
   border-radius: 30px;
 }
 
@@ -227,8 +220,8 @@ border-style: none;
 }
 
 .subscribebutton {
-  background-color: white;
-  color: black;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   border-radius: 20px;
   /* padding: 1px; */
   margin-top: -1em;
@@ -237,10 +230,10 @@ border-style: none;
 
 .somethingforeveryone {
   justify-content: space-between;
-  background-color: rgb(212, 220, 224);
+  background-color: var(--background-color);
   padding: 20px;
-  background: white;
-  color: black;
+  background: var(--background-color);
+  color: var(--text-color);
   border-radius: 50px;
   margin-top: 5em;
 }
@@ -253,23 +246,19 @@ border-style: none;
 }
 
 .sfe h4 {
-  color: #023150;
-}
-
-.bundles p {
-
+  color: var(--primary-color);
 }
 
 .explorethearchieve {
-  background: #003865;
+  background: var(--primary-color);
   padding: 20px;
-  color: rgb(255, 255, 255);
+  color: var(--background-color);
   border-radius: 40px;
   text-align: left;
 }
 
 .explorethearchieve h2 {
-  color: white;
+  color: var(--background-color);
   text-align: center;
   font-size: 4.5cap;
   margin-top: -0.2em;
@@ -282,13 +271,13 @@ border-style: none;
 }
 
 .explorethearchieve p {
-  color: white;
+  color: var(--background-color);
   text-align: center;
 }
 
 .explorethearchieve button {
-  background-color: rgb(255, 255, 255);
-  color: #023150;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   border-radius: 20px;
   padding: 5px;
   margin: 1em;
@@ -297,26 +286,6 @@ border-style: none;
 
 video {
   border-radius: 3cap;
-}
-
-.viewmorerecipesbutton {
-  background-color: rgb(255, 255, 255);
-  color: #023150;
-  border-radius: 20px;
-  padding: 5px;
-  margin: 1em;
-}
-
-.thebuzz {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(212, 220, 224);
-  padding: 20px;
-  background: white;
-  color: black;
-  border-radius: 30px;
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 /* color: p button bestsellers: #9bcbeb */
