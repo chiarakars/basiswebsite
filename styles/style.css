@@ -2,6 +2,11 @@ body {
   background-color: #e3ecf0;
   color: black;
   text-align: center;
+  font-size: 16px;
+}
+
+header {
+  position: sticky;
 }
 
 h1 {
@@ -36,7 +41,9 @@ p {
 }
 
 nav {
-  /* position: fixed; */
+  /* position: sticky; */
+  z-index: 10;
+  top: 0;
 }
 
 ul {
@@ -51,6 +58,7 @@ ul {
 
 nav ul {
   background-color: #003865;
+  z-index: 10;
 }
 
 ol {
@@ -63,6 +71,45 @@ ol {
 
 li {
   font-weight: bold;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(Pink, #023150); /* Background for the page */
+  --clr: light-dark(#023150, White); /* Text color for the page */
+  --button-bg: light-dark(#023150, White); /* Background color for button */
+  --button-clr: light-dark(White, #023150); /* Text color for button */
+  --text-clr: light-dark(Black, White);
+}
+
+/* Set theme for light mode */
+html:has([value="light"]:checked) {
+  color-scheme: light;
+}
+
+/* Set theme for dark mode */
+html:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+/* Apply background and text colors to the page */
+html {
+  color: var(--clr);
+  background-color: var(--bg);
+}
+
+/* Apply theme-specific button styles */
+button {
+  padding: 1em;
+  margin: 0;
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--button-clr);
+  cursor: pointer;
+}
+
+p {
+  color: var(--text-clr);
 }
 
 .logo {
@@ -120,7 +167,7 @@ li {
   color: white;
   margin: -10;
   padding: -10;
-  margin-top: -1em;
+  margin-top: 1em;
 }
 
 .frontpage button {
