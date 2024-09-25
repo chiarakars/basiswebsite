@@ -1,4 +1,4 @@
-/* Default (light mode) */
+/* Default (light mode) met hulp van codepen van david */
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
@@ -14,10 +14,10 @@ body:has(input[value="dark"]:checked) {
 }
 
 body:has(input[value="summer"]:checked) {
-  --background-color: #fff4ca; /* Light sunny yellow */
-  --text-color: #005f73;       /* Dark teal */
-  --primary-color:#074c0b;    /* Bright orange */
-  --secondary-color: #86cf89;  /* Warm earthy tone */
+  --background-color: #fff4ca; 
+  --text-color: #005f73;     
+  --primary-color:#074c0b; 
+  --secondary-color: #86cf89;  
 }
 
 body {
