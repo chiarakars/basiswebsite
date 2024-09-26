@@ -7,17 +7,17 @@
 }
 
 body:has(input[value="dark"]:checked) {
-  --background-color: #1B1A55;
-  --text-color: #9290C3;
-  --primary-color: #535C91;
-  --secondary-color: #070F2B;
+  --background-color: #1b1a55;
+  --text-color: #9290c3;
+  --primary-color: #535c91;
+  --secondary-color: #070f2b;
 }
 
 body:has(input[value="summer"]:checked) {
-  --background-color: #fff4ca; 
-  --text-color: #005f73;     
-  --primary-color:#074c0b; 
-  --secondary-color: #86cf89;  
+  --background-color: #fff4ca;
+  --text-color: #005f73;
+  --primary-color: #074c0b;
+  --secondary-color: #86cf89;
 }
 
 body {
@@ -48,7 +48,8 @@ h1 {
   margin: -150px 0;
 }
 
-h1, h2 span {
+h1,
+h2 span {
   display: block;
 }
 
@@ -69,6 +70,7 @@ h5 {
 
 p {
   color: var(--text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
@@ -84,7 +86,6 @@ ul {
   list-style-type: none;
   gap: 1em;
   justify-content: space-around;
-  
 }
 
 nav ul {
@@ -136,12 +137,16 @@ li {
 
 .carousel-p.active {
   left: 0;
-  transform: translateX(0); /* Verplaats de tekst naar zijn originele plek (binnen het zicht) */
+  transform: translateX(
+    0
+  ); /* Verplaats de tekst naar zijn originele plek (binnen het zicht) */
   opacity: 1; /* Toon de tekst */
 }
 
 .carousel-p.exit {
-  transform: translateX(-100%); /* Schuif de huidige tekst naar links (uit het zicht) */
+  transform: translateX(
+    -100%
+  ); /* Schuif de huidige tekst naar links (uit het zicht) */
   opacity: 0; /* Verberg de tekst */
 }
 
@@ -178,7 +183,6 @@ li {
   grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
   gap: -5px;
   margin-top: 20px;
-
 }
 
 .bestsellers p {
@@ -207,12 +211,71 @@ li {
   border-radius: 30px;
 }
 
+body.about img {
+  border-radius: 2em;
+}
+
+.about p {
+  font-size: 100%;
+}
+
+/* .about {
+  padding: 15px;
+  margin: 5px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 30px;
+} */
+
+.choose {
+  padding: 15px;
+  margin: 5px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 30px;
+}
+
+.choose h3,
+.quality h3,
+.inspiration h3 {
+  font-size: 28px;
+  display: inline-block;
+  width: 85%;
+  margin-bottom: 5px;
+  color: var(--primary-color)
+}
+
+
+
+.choose p,
+.quality p,
+.inspiration p {
+  margin: 1em 1em;
+  margin-top: 0;
+  line-height: 130%;
+  padding: -1em -1em;
+  color: var(--primary-color)
+}
+
+.quality {
+  padding: 15px;
+  margin: 2em 2em;
+  background: #a5d2eb;
+  color: var(--text-color);
+  border-radius: 30px;
+}
+
+.inspiration {
+margin: 5%;
+margin-bottom: 20%;
+}
+
 button {
   background-color: #215731;
   color: white;
   border-radius: 20px;
   width: 130px;
-border-style: none;
+  border-style: none;
 }
 
 .bestsellers.button {
