@@ -114,12 +114,19 @@ li {
 .logo {
   margin-top: -2em;
   margin-bottom: -2em;
+  margin-left: 3em;
 }
 
 .hamburger-icon {
   width: 1em;
   height: auto;
   margin-left: -10px;
+}
+
+.img-icons {
+  margin-top: -1em;
+  margin-bottom: -2em;
+  margin-right: -1.5em;
 }
 
 .text-carousel {
