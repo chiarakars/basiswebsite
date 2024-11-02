@@ -32,11 +32,17 @@ button {
   color: var(--text-color);
 }
 
+button:active {
+  /* 1px omlaag bij klikken - als feedback */
+  transform: translateY(3px);
+}
+
 a {
   color: var(--background-color);
 }
 
-header {
+header,
+nav {
   position: sticky;
 }
 
@@ -198,7 +204,6 @@ li {
 
 .bundles p {
   margin-top: -0.5em;
-  font-size: smaller;
 }
 
 .pitcher,
@@ -248,7 +253,7 @@ body.about img {
   display: inline-block;
   width: 85%;
   margin-bottom: 5px;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .choose p,
@@ -258,7 +263,7 @@ body.about img {
   margin-top: 0;
   line-height: 130%;
   padding: -1em -1em;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .quality {
@@ -270,8 +275,8 @@ body.about img {
 }
 
 .inspiration {
-margin: 5%;
-margin-bottom: 20%;
+  margin: 5%;
+  margin-bottom: 20%;
 }
 
 button {
@@ -356,7 +361,16 @@ video {
 }
 
 .hamburger {
-  text-align: right;
+  text-align: left;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: -100;
+}
+
+body.hamburger img {
+  border-radius: 20%;
+  /* display: flex; */
+  justify-content: center;
+  gap: 10px;
 }
 
 /* color: p button bestsellers: #9bcbeb */
