@@ -24,3 +24,21 @@ texts[currentIndex].classList.add('active');
 setInterval(showNextText, 4000);
 
 //met hulp van ChatGPT
+
+// Luister naar het indrukken van toetsen op de hele pagina
+document.addEventListener("keydown", function(event) {
+    // Controleer of de Escape-toets is ingedrukt
+    if (event.key === "Escape") {
+      // Scroll naar de onderkant van de pagina
+      document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  // hulp van Lucas 
+
+  document.getElementById("scrollButton").onclick = function () {
+    // Scroll soepel naar de bovenkant van de pagina
+    document.getElementById("top").scrollIntoView({ behavior: "smooth" });
+  };
+  
+  

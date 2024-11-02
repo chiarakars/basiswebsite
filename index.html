@@ -8,10 +8,9 @@
     <title>chamberlain coffee</title>
 
     <link href="styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="text-carousel">
         <p class="carousel-p">free chocolate matcha with al orders over €75</p>
         <p class="carousel-p">free shipping on all eu orders over €60</p>
@@ -19,6 +18,15 @@
       </div>
       <nav>
         <ul>
+          <li>
+            <a href="hamburger.html">
+              <img
+                src="/images/hamburgermenu.png"
+                alt="Hamburgermenu"
+                class="hamburger-icon"
+              />
+            </a>
+          </li>
           <li>
             <div class="logo">
               <img
@@ -29,7 +37,7 @@
               />
             </div>
           </li>
-        </ul>
+            </ul>
         <form id="theme-form">
           <label>
             <input type="radio" name="theme" value="light" checked> Light Mode
@@ -272,6 +280,12 @@
     </section>
 
     <a href="./index2.html">Door naar de oude pagina</a>
+
+    <footer id="footer">
+      <p>Je bent nu aan de onderkant van de pagina</p>
+      <button id="scrollButton">Terug naar boven</button>
+    </footer>
+
     <script defer src="java.js"></script>
   </body>
 </html>

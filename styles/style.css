@@ -110,6 +110,12 @@ li {
   margin-bottom: -2em;
 }
 
+.hamburger-icon {
+  width: 1em;
+  height: auto;
+  margin-left: -10px;
+}
+
 .text-carousel {
   width: 100%;
   text-align: center;
@@ -245,8 +251,6 @@ body.about img {
   color: var(--primary-color)
 }
 
-
-
 .choose p,
 .quality p,
 .inspiration p {
@@ -349,6 +353,10 @@ button {
 
 video {
   border-radius: 3cap;
+}
+
+.hamburger {
+  text-align: right;
 }
 
 /* color: p button bestsellers: #9bcbeb */
