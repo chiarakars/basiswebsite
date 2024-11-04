@@ -7,14 +7,24 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   </head>
   <body class="about">
-    <header>
+    <header id="top">
       <div class="text-carousel">
         <p class="carousel-p">free chocolate matcha with al orders over €75</p>
         <p class="carousel-p">free shipping on all eu orders over €60</p>
         <p class="carousel-p">shipping locally to eu costumers</p>
       </div>
+
       <nav>
         <ul>
+          <li>
+            <a href="hamburger.html">
+              <img
+                src="/images/hamburgermenu.png"
+                alt="Hamburgermenu"
+                class="hamburger-icon"
+              />
+            </a>
+          </li>
           <li>
             <div class="logo">
               <a href="index.html">
@@ -27,14 +37,35 @@
               </a>
             </div>
           </li>
+          <li>
+            <div class="img-icons">
+              <img
+                src="/images/nav-icons.png"
+                height="45"
+                width="75"
+                alt="iconen zoeker en winkelwagentje in de vorm van coffee"
+              />
+            </div>
+          </li>
         </ul>
       </nav>
+      <form id="theme-form">
+        <label>
+          <input type="radio" name="theme" value="light" checked /> Light Mode
+        </label>
+        <label>
+          <input type="radio" name="theme" value="dark" /> Dark Mode
+        </label>
+        <label>
+          <input type="radio" name="theme" value="vegan" /> Vegan Mode
+        </label>
+      </form>
     </header>
 
     <img
       src="/images/aboutme1.webp"
       height="100%"
-      width="100%"
+      width="90%"
       alt="logo naam chamberlain coffee"
     />
 

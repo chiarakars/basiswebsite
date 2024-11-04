@@ -13,7 +13,7 @@ body:has(input[value="dark"]:checked) {
   --secondary-color: #070f2b;
 }
 
-body:has(input[value="summer"]:checked) {
+body:has(input[value="vegan"]:checked) {
   --background-color: #fff4ca;
   --text-color: #005f73;
   --primary-color: #074c0b;
@@ -79,12 +79,6 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
-  /* position: sticky; */
-  z-index: 10;
-  top: 0;
-}
-
 ul {
   color: var(--secondary-color);
   padding: 1em;
@@ -145,7 +139,7 @@ li {
 
 .carousel-p {
   position: absolute;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   width: 100%;
   top: 0;
   left: 100%; /* Start buiten het scherm aan de rechterkant */
@@ -236,14 +230,6 @@ body.about img {
 .about p {
   font-size: 100%;
 }
-
-/* .about {
-  padding: 15px;
-  margin: 5px;
-  background: var(--background-color);
-  color: var(--text-color);
-  border-radius: 30px;
-} */
 
 .choose {
   padding: 15px;
