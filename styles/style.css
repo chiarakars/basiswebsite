@@ -234,15 +234,8 @@ body.about img {
 }
 
 .about p {
-  font-size: 100%;
-}
-
-.choose {
-  padding: 15px;
-  margin: 5px;
-  background: var(--background-color);
-  color: var(--text-color);
-  border-radius: 30px;
+  font-size: 80%;
+  font-weight: lighter;
 }
 
 .choose h3,
@@ -253,6 +246,7 @@ body.about img {
   width: 85%;
   margin-bottom: 5px;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
 .choose p,
@@ -260,17 +254,28 @@ body.about img {
 .inspiration p {
   margin: 1em 1em;
   margin-top: 0;
-  line-height: 130%;
+  line-height: 1.5;
   padding: -1em -1em;
   color: var(--primary-color);
 }
 
+.choose {
+  padding: 1.5em 1em;
+  margin: 1em 1em;
+  margin-bottom: 4em;
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 30px;
+  
+}
+
 .quality {
-  padding: 15px;
-  margin: 2em 2em;
+  padding: 1.5em 3em;
+  margin: 1em 1em;
   background: #a5d2eb;
   color: var(--text-color);
   border-radius: 30px;
+  line-height: 1.5;
 }
 
 .inspiration {
@@ -369,7 +374,7 @@ video {
   color: var(--primary-color);
   font-family: "Times New Roman", Times, serif;
   font-weight: 900;
-  font-size: small;
+  font-size: 0.9em;
   margin-left: 5%;
   padding: 5px 10px;
   width: auto;
