@@ -42,3 +42,9 @@ document.addEventListener('keydown', function(event) {
 document.getElementById("scrollButton").onclick = function () {
   document.getElementById("top").scrollIntoView({ behavior: "smooth" });
 };
+
+window.addEventListener('wheel', function(event) {
+    if (event.deltaX !== 0) {
+      event.preventDefault();
+    }
+  }, { passive: false });
