@@ -1,7 +1,9 @@
 console.log("Hello world");
+
 const texts = document.querySelectorAll(".carousel-p");
 let currentIndex = 0; // Houd bij welke tekst momenteel zichtbaar is
 
+// Carrousel animatie (via tutorial van David en hulp van ChatGPT)
 function showNextText() {
   // Verberg de huidige tekst door de 'active' klasse te verwijderen en de 'exit' klasse toe te voegen
   texts[currentIndex].classList.remove("active");
@@ -20,24 +22,28 @@ function showNextText() {
 // Toon de eerste tekst bij het laden van de pagina
 texts[currentIndex].classList.add("active");
 
-// Wissel elke 3 seconden van tekst
+// Wissel elke 4 seconden van tekst
 setInterval(showNextText, 4000);
 
-//met hulp van ChatGPT
-
+// Button klikbaar
 document.getElementById("myButton").onclick = function () {
   window.location.href = "about.html";
 };
 
-// Luister naar het indrukken van toetsen op de hele pagina
+// Shortcuts (hulp van Lucas)
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
   }
 });
 
-// hulp van Lucas
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'a' || event.key === 'A') {
+        window.location.href = 'about.html';
+    }
+});
 
+// Scroll animatie met button
 document.getElementById("scrollButton").onclick = function () {
   document.getElementById("top").scrollIntoView({ behavior: "smooth" });
 };

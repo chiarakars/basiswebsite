@@ -156,16 +156,12 @@ li {
 
 .carousel-p.active {
   left: 0;
-  transform: translateX(
-    0
-  ); /* Verplaats de tekst naar zijn originele plek (binnen het zicht) */
+  transform: translateX(0); /* Verplaats de tekst naar zijn originele plek (binnen het zicht) */
   opacity: 1; /* Toon de tekst */
 }
 
 .carousel-p.exit {
-  transform: translateX(
-    -100%
-  ); /* Schuif de huidige tekst naar links (uit het zicht) */
+  transform: translateX(-100%); /* Schuif de huidige tekst naar links (uit het zicht) */
   opacity: 0; /* Verberg de tekst */
 }
 
@@ -199,7 +195,7 @@ li {
 
 .bestsellers {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Twee kolommen hulp van Thomas*/
+  grid-template-columns: repeat(2, 1fr);
   gap: -5px;
   margin-top: 20px;
 }
@@ -375,6 +371,13 @@ button {
   margin: 1em;
   text-align: center;
 }
+
+/* #view-more-recipes {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  background-color: var(--background-color);
+  color: var(--primary-color)
+} */
 
 video {
   border-radius: 3cap;
