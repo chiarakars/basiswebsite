@@ -372,13 +372,6 @@ button {
   text-align: center;
 }
 
-/* #view-more-recipes {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight:bold;
-  background-color: var(--background-color);
-  color: var(--primary-color)
-} */
-
 video {
   border-radius: 3cap;
 }
