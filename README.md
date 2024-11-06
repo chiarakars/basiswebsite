@@ -1,4 +1,4 @@
-![webversie1-screenshot](https://github.com/user-attachments/assets/6dfc54a5-9908-41d2-9254-297923cf8d00)# Procesverslag
+# Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
