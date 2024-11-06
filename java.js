@@ -34,9 +34,12 @@ document.addEventListener('keydown', function(event) {
 });
 
 // Scroll animatie met button
-document.getElementById("scrollButton").onclick = function () {
-  document.getElementById("top").scrollIntoView({ behavior: "smooth" });
-};
+const scrollButton = document.getElementById("scrollButton");
+if (scrollButton) {
+  scrollButton.onclick = function () {
+    document.getElementById("top").scrollIntoView({ behavior: "smooth" });
+  };
+}
 
 // Afmeting juist
 window.addEventListener('wheel', function(event) {
