@@ -1,24 +1,35 @@
 console.log("Hello world");
 
-const texts = document.querySelectorAll(".carousel-p");
-let currentIndex = 0; // Houd bij welke tekst momenteel zichtbaar is
-// Carrousel animatie (via tutorial van David en hulp van ChatGPT)
-function showNextText() {
-  // Verberg de huidige tekst door de 'active' klasse te verwijderen en de 'exit' klasse toe te voegen
-  texts[currentIndex].classList.remove("active");
-  texts[currentIndex].classList.add("exit");
-  // Bepaal de volgende index
-  currentIndex = (currentIndex + 1) % texts.length;
-  // Verwijder de 'exit' klasse van de nieuwe tekst, zodat deze niet meer verborgen is
-  setTimeout(() => {
-    texts.forEach((text) => text.classList.remove("exit"));
+window.addEventListener("DOMContentLoaded", () => {
+    const texts = document.querySelectorAll(".carousel-p");
+    let currentIndex = 0; // Houd bij welke tekst momenteel zichtbaar is
+    
+    // Controleer of er elementen zijn gevonden
+    if (texts.length === 0) {
+      console.error("Geen elementen met de class '.carousel-p' gevonden.");
+      return; // Stop de uitvoering als er geen teksten zijn
+    }
+  
+    // Functie voor het weergeven van de volgende tekst
+    function showNextText() {
+      texts[currentIndex].classList.remove("active");
+      texts[currentIndex].classList.add("exit");
+  
+      // Bepaal de volgende index
+      currentIndex = (currentIndex + 1) % texts.length;
+  
+      // Verwijder de 'exit' klasse van de nieuwe tekst en voeg 'active' toe
+      setTimeout(() => {
+        texts.forEach((text) => text.classList.remove("exit"));
+        texts[currentIndex].classList.add("active");
+      }, 600); // Wacht 0.6 seconden
+    }
+  
+    // Toon de eerste tekst bij het laden van de pagina
     texts[currentIndex].classList.add("active");
-  }, 600); // Wacht 0.6 seconden, zodat de huidige tekst de tijd heeft om naar links te schuiven
-}
-// Toon de eerste tekst bij het laden van de pagina
-texts[currentIndex].classList.add("active");
-// Wissel elke 4 seconden van tekst
-setInterval(showNextText, 4000);
+    // Wissel elke 4 seconden van tekst
+    setInterval(showNextText, 4000);
+  });
 
 // Shortcuts (hulp van Lucas)
 document.addEventListener("keydown", function (event) {
