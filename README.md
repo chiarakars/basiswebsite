@@ -161,6 +161,17 @@ Omdat Demi en ik maar met z'n tweeen waren met twee studenten assistentes hebben
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 </details>
+- onderdelen hebben de eigen benaming (button, p's, h's etc)
+- elke pagina heeft een titel
+- viewport werkt, je kan in en uitzoomen
+- site is toegankelijk op zowel web als mobiel
+- op mobiel rotate de site mee als je je mobiel horizontaal houdt
+- alle img's hebben een alt voor als het plaatje niet laadt of slechtziende mensen
+- er zit geen autoplay op de video wat fijn is, je schrikt niet zomaar van (hard) geluid en voor bijvoorbeeld mensen met epelepsie is het geen trigger
+- de video kan gepauseerd worden (zowel beeld als geluid)
+- de linkjes zijn aangeduid met a
+- in de buttons zit een kleine transition zodat het duidelijk is dat het om een button gaat (ookal is ie niet klikbaar)
+- dark en light mode toegevoegd: originele site heeft dat niet, ik vind het zelf altijd heel fijn als apps dat hebben
 
 
 
