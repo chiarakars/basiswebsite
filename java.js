@@ -43,6 +43,7 @@ document.getElementById("scrollButton").onclick = function () {
   document.getElementById("top").scrollIntoView({ behavior: "smooth" });
 };
 
+// Afmeting juist
 window.addEventListener('wheel', function(event) {
     if (event.deltaX !== 0) {
       event.preventDefault();

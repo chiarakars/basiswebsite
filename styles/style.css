@@ -165,20 +165,13 @@ li {
 .carousel-p.exit {
   transform: translateX(-100%); /* Schuif de huidige tekst naar links (uit het zicht) */
   opacity: 0; /* Verberg de tekst */
-  /* clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; */
 }
 
 .frontpage {
   position: relative;
   width: 100%;
   height: 600px;
-  background-image: url("./images/frontpagecoffee.jpg");
+  background-image: url("../images/frontpagecoffee.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
