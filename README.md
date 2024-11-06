@@ -242,7 +242,12 @@ ik heb het meeste geleerd van het css vormgeven. hoe je specifieke codes uit htm
 
   1.  https://www.youtube.com/watch?v=iLmBy-HKIAw&t=84s
   2. ChatGPT: 'ik wil in javascript toevoegen dat de carousel soort binnen slide van rechts naar links'
-  3. 
-  4. ...
+  3. errors eruithalen: https://chatgpt.com/c/672b8986-1b34-800f-acd1-d0fde4d87745
+  4. dark mode van David: https://chatgpt.com/c/672b8986-1b34-800f-acd1-d0fde4d87745 
+  5. shortcuts hulp van Lucas
+  6. https://www.youtube.com/watch?v=z4wMSnrS0kE
+  7. https://www.youtube.com/watch?v=6yAAV-uP0po&t=215s
+  8. https://www.youtube.com/watch?v=LDe9mpUT-ZY&t=123s
+  9. https://chatgpt.com/c/66f40ca0-e24c-800f-9ce5-67f4ef8ba0e5
 
 </details>
