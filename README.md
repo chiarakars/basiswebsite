@@ -260,5 +260,6 @@ ik heb het meeste geleerd van het css vormgeven. hoe je specifieke codes uit htm
   7. https://www.youtube.com/watch?v=6yAAV-uP0po&t=215s
   8. https://www.youtube.com/watch?v=LDe9mpUT-ZY&t=123s
   9. https://chatgpt.com/c/66f40ca0-e24c-800f-9ce5-67f4ef8ba0e5
+  10. https://chatgpt.com/share/672b9ee1-242c-800a-a690-5318de58b88c
 
 </details>
