@@ -207,6 +207,9 @@ Op dit moment staat alle content erin en vormgegeven met css. Ik heb de reposito
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
+de dag voor de herkansing deadline heb ik nog een teams meeting met Thomas ingepland. ik had voor de meeting al gezorgd dat alles in orde was en de code compleet en alleen de laatste vragen en dubbelcheck even samen konden doorlopen. dit was heel fijn en gaf mij ook extra vertrouwen. de oplossing voor de img's op de repository bleek dat ik een . (punt) was vergeten en dat het mapje telkens niet werd aangeroepen. hier kwamen we gelukkig snel achter en heb dit daarmee opgelost. ook heb ik de surfaceplanes laten zien die ik heb uitgewerkt waar hij tevreden over was. 
+Ik heb uiteindelijk alles bij elkaar veel tijd in dit vak gestoken, ik merkte dat ik dit het lastigste vak tot nu toe vind op CMD. Als ik mijn werk vergelijk met anderen is het niet waar ik hoopte te zijn, maar als ik kijk naar mijn eigen ontwikkeling van waar ik in week 1 mee begon en wat ik nu neerzet ben ik heel tevreden. 
+
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/hamburger-ss.png" width="375px" alt="hamburger menu">
 
@@ -220,9 +223,8 @@ ik heb het meeste geleerd van het css vormgeven. hoe je specifieke codes uit htm
   Korte omschrijving met plaatjes
   - iets waarvan ik achteraf veel baat bij zou hebben gehad is de breakdown maken van de pagina's. ik heb deze opdracht over het hoofd gezien, wat best zonde is. ik had week 1 read.me verder wel bijgehouden en later ook niet meer naar week 1 omgekeken. als ik een duidelijke breakdown voor mijzelf had gemaakt zou ik veel meer overzicht hebben het opstellen van de html en daarbij denk ik misschien ook wat meer overzicht in mijn css. vanwege het feit dat ik dit niet op het begin heb gedaan, laat ik het ook hierbij en heb ik besloten het niet alsnog achteraf te maken, aangezien dat weinig zin heeft nu ik mijn site al af heb. ik neem dit wel zeker mee naar volgende keer dat ik echt ga beginnen met een breakdown schets maken om het mijzelf een stuk makkelijker en overzichtelijker te maken.
 
-- daarnaast iets dat mij niet volledig is gelukt is het full frame maken van de site. ik begon met een webversie en ben daarna overgegaan naar mobiel. ik heb dit in een nieuw html bestand gedaan, maar de breedte van de website bleef web-versie, terwijl de content dat niet werd. ook als ik in css width op 100% zet komt het wel overeen met mobiele versie. ik heb aan de studentassistentes gevraagd of dit een probleem was maar gelukkig vertelde zij mij dat zolang de afmetingen kloppen wanneer je doorklikt en de pagina refresht klopt, het allemaal oke is. 
+- daarnaast iets dat mij niet volledig is gelukt is het full frame maken van de site. ik begon met een webversie en ben daarna overgegaan naar mobiel. ik heb dit in een nieuw html bestand gedaan, maar de breedte van de website bleef wijder dan normaal. ook als ik in css width op 100% zet komt het wel overeen met mobiele versie. ik heb aan de studentassistentes gevraagd of dit een probleem was maar gelukkig vertelde zij mij dat zolang de afmetingen kloppen wanneer je doorklikt en de pagina refresht klopt, het allemaal wel oke is. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
