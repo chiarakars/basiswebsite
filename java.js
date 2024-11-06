@@ -37,7 +37,12 @@ document.addEventListener('keydown', function(event) {
 const scrollButton = document.getElementById("scrollButton");
 if (scrollButton) {
   scrollButton.onclick = function () {
-    document.getElementById("top").scrollIntoView({ behavior: "smooth" });
+    const topElement = document.getElementById("top");
+    if (topElement) {
+      topElement.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error("Element with ID 'top' not found.");
+    }
   };
 }
 
