@@ -20,11 +20,6 @@ texts[currentIndex].classList.add("active");
 // Wissel elke 4 seconden van tekst
 setInterval(showNextText, 4000);
 
-// Button klikbaar
-document.getElementById("myButton").onclick = function () {
-  window.location.href = "about.html";
-};
-
 // Shortcuts (hulp van Lucas)
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
